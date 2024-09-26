@@ -24,7 +24,15 @@ namespace Windows
         /// <param name="e"></param>
         private void Actionbutton_Click(object sender, EventArgs e)
         {
-            this.Messagelabel.Text = "クリックしました";
+            int one = 1;
+            int three = 3;
+            int four = one + three;
+
+            four++;
+            four++;
+            four--;
+
+            this.Messagelabel.Text = four.ToString();
         }
 
         /// <summary>
@@ -34,7 +42,7 @@ namespace Windows
         /// <param name="e"></param>
         private void Actionbutton_MouseHover(object sender, EventArgs e)
         {
-            this.Messagelabel.Text = "マウスが乗りました";
+            //this.Messagelabel.Text = "マウスが乗りました";
         }
 
         /// <summary>
@@ -44,7 +52,9 @@ namespace Windows
         /// <param name="e"></param>
         private void Actionbutton_MouseLeave(object sender, EventArgs e)
         {
-            this.Messagelabel.Text = "マウスが外れました";
+            string hello = "こんにちわ";
+            string goodNight = "こんばんわ";
+            this.Messagelabel.Text = hello + goodNight;
         }
     }
 }
